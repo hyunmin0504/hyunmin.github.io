@@ -1,8 +1,127 @@
-body {
-  background: #f7f7f7;
-  font-family: sans-serif;
-  padding: 40px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
-  font-size: 36px;
+
+body {
+  background: #F7F7F5;
+  font-family: 'Pretendard', sans-serif;
+  color: #1A1A1A;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #1A1A1A;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+.header nav a:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 180px 20px 140px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #6B6B6B;
+}
+
+/* WORK SECTION */
+.work {
+  padding: 80px 48px;
+}
+
+.work h2 {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: #1A1A1A;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  background: #E3E3E3;
+}
+
+.card-info {
+  margin-top: 12px;
+}
+
+.card-info h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: #6B6B6B;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+/* ABOUT & CONTACT */
+.about, .contact {
+  padding: 120px 48px;
+}
+
+.about h2, .contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about p, .contact p {
+  width: 60%;
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: #6B6B6B;
 }
